@@ -14,119 +14,156 @@
     </header>
 
     <main>
-        <form action="" method="get">
+        <form action="#" method="get">
             <fieldset>
                 <h2>Datos del Representante</h2>
                 <ol>
-                    <li> Apellidos del representante:</li>
-                    <input type="text"
-                        style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
 
-                    <li>Nombres del representante:</li>
-                    <input type="text"
-                        style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
+                    <li>
+                        Apellidos del representante:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                    <li>Sexo del representante:</li>
-                    <input type="radio" name="sexo_rep"> Femenino
-                    <input type="radio" name="sexo_rep"> Masculino<br><br>
+                    <li>
+                        Nombres del representante:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                    <li>Documento de identidad (Cédula / Pasaporte):</li>
-                    <input type="text"
-                        style="border:none;border-bottom:1px solid #000;outline:none;width:300px;"><br><br>
+                    <li>
+                        Sexo del representante:<br>
+                        <label><input type="radio" name="sexo_rep"> Femenino</label>
+                        <label><input type="radio" name="sexo_rep"> Masculino</label>
+                    </li>
 
-                    <li>Teléfonos:</li>
-                    Residencial
-                    <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:150px;">
-                    Móvil
-                    <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:150px;">
-                    Otro
-                    <input type="text"
-                        style="border:none;border-bottom:1px solid #000;outline:none;width:150px;"><br><br>
+                    <li>
+                        Documento de identidad (Cédula / Pasaporte):<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:300px;">
+                    </li>
 
-                    <li> Correo electrónico:</li>
-                    <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:300px;">
-                    </p>
+                    <li>
+                        Teléfonos:<br>
+                        Residencial
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:150px;">
+                        Móvil
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:150px;">
+                        Otro
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:150px;">
+                    </li>
 
-                    <hr>
-                    <h2>Datos del Paciente (Niño o Niña)</h2>
-                    <p>
-                        <li>Nombre completo del niño(a):</li>
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
+                    <li>
+                        Correo electrónico:<br>
+                        <input type="email" style="border:none;border-bottom:1px solid #000;width:300px;">
+                    </li>
 
-                        <li> Sexo:</li>
-                        <input type="radio" name="sexo_nino"> Femenino
-                        <input type="radio" name="sexo_nino"> Masculino<br><br>
+                </ol>
 
-                        <li> Fecha de nacimiento:</li>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:150px;">
+                <hr>
+
+                <!-- DATOS DEL PACIENTE -->
+                <h2>Datos del Paciente (Niño o Niña)</h2>
+                <ol start="7">
+
+                    <li>
+                        Nombre completo del niño(a):<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
+
+                    <li>
+                        Sexo:<br>
+                        <label><input type="radio" name="sexo_nino"> Femenino</label>
+                        <label><input type="radio" name="sexo_nino"> Masculino</label>
+                    </li>
+
+                    <li>
+                        Fecha de nacimiento:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:150px;">
                         Edad:
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:80px;"><br><br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:80px;">
+                    </li>
 
-                        <li> ¿Presenta alguna discapacidad?</li>
-                        <input type="radio" name="enfermedad"> Sí
-                        <input type="radio" name="enfermedad"> No<br>
-                        Si marcó sí, especifique:
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
+                    <li>
+                        ¿Presenta alguna discapacidad?<br>
+                        <label><input type="radio" name="discap"> Sí</label>
+                        <label><input type="radio" name="discap"> No</label><br>
+                        Si marcó sí, especifique:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                        <li>Tipo de limitación (si aplica):</li>
-                        <input type="radio" name="limitacion" value="auditiva"> Auditiva
-                        <input type="radio" name="limitacion" value="motora"> Motora
-                        <input type="radio" name="limitacion" value="visual"> Visual
-                        <input type="radio" name="limitacion" value="intelectual"> Intelectual
-                        <input type="radio" name="limitacion" value="otra"> Otra:
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:200px;"><br><br>
+                    <li>
+                        Tipo de limitación (si aplica):<br>
+                        <label><input type="radio" name="limitacion" value="auditiva"> Auditiva</label>
+                        <label><input type="radio" name="limitacion" value="motora"> Motora</label>
+                        <label><input type="radio" name="limitacion" value="visual"> Visual</label>
+                        <label><input type="radio" name="limitacion" value="intelectual"> Intelectual</label>
+                        <label><input type="radio" name="limitacion" value="otra"> Otra:</label>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:200px;">
+                    </li>
 
-                        <li>Alergias (solo una opción):</li><br>
-                        <input type="radio" name="alergia" value="medicamentos"> Medicamentos
-                        <input type="radio" name="alergia" value="alimentos"> Alimentos
-                        <input type="radio" name="alergia" value="ambientales"> Sustancias ambientales
-                        <br>Detalles:
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:400px;"><br><br>
+                    <li>
+                        Alergias (solo una opción):<br>
+                        <label><input type="radio" name="alergia" value="medicamentos"> Medicamentos</label>
+                        <label><input type="radio" name="alergia" value="alimentos"> Alimentos</label>
+                        <label><input type="radio" name="alergia" value="ambientales"> Sustancias ambientales</label><br>
+                        Detalles:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:400px;">
+                    </li>
 
-                        <li>¿Las vacunas están al día?</li>
-                        <input type="radio" name="vacunas"> Sí
-                        <input type="radio" name="vacunas"> No<br><br>
+                    <li>
+                        ¿Las vacunas están al día?<br>
+                        <label><input type="radio" name="vacunas"> Sí</label>
+                        <label><input type="radio" name="vacunas"> No</label>
+                    </li>
 
-                        <li>Condiciones médicas actuales / Motivo de consulta:</li><br>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:95%;"><br>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:95%;"><br>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:95%;"><br>
-                    </p>
+                    <li>
+                        Condiciones médicas actuales / Motivo de consulta:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:95%;"><br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:95%;"><br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:95%;">
+                    </li>
 
-                    <hr>
+                </ol>
 
-                    <h2>Antecedentes Médicos Relevantes</h2>
+                <hr>
 
-                    <p>
-                        <li>Enfermedades previas importantes:</li>
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
+                <!-- ANTECEDENTES MÉDICOS -->
+                <h2>Antecedentes Médicos Relevantes</h2>
+                <ol start="16">
 
-                        <li>Medicamentos que toma actualmente:</li>
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
+                    <li>
+                        Enfermedades previas importantes:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                        <li>Cirugías u hospitalizaciones previas:</li>
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
+                    <li>
+                        Medicamentos que toma actualmente:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                        <li>Enfermedades crónicas (asma, convulsiones, anemia, etc.):</li>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:350px;">
-                    </p>
-                    <hr>
-                    <h2>Contacto de Emergencia</h2>
+                    <li>
+                        Cirugías u hospitalizaciones previas:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                    <p>
-                        <li>Nombre completo del contacto:</li>
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:300px;"><br><br>
+                    <li>
+                        Enfermedades crónicas (asma, convulsiones, anemia, etc.):<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:350px;">
+                    </li>
 
-                        <li>Parentesco con el niño(a):</li>
+                </ol>
+
+                <hr>
+
+                <!-- CONTACTO DE EMERGENCIA -->
+                <h2>Contacto de Emergencia</h2>
+                <ol start="20">
+
+                    <li>
+                        Nombre completo del contacto:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:300px;">
+                    </li>
+
+                    <li>
+                        Parentesco con el niño(a):<br>
                         <select name="parentesco">
                             <option value="">Opciones</option>
                             <option value="madre">Madre</option>
@@ -134,20 +171,30 @@
                             <option value="tutor">Tutor legal</option>
                             <option value="familiar">Familiar</option>
                             <option value="otro">Otro</option>
-                        </select><br><br>
+                        </select>
+                    </li>
 
-                        <li>Teléfono del contacto:</li>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:200px;">
-                    </p>
-                    <hr>
-                    <h2>Seguro Médico</h2>
+                    <li>
+                        Teléfono del contacto:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:200px;">
+                    </li>
 
-                    <p>
-                        <li>¿Posee seguro médico?</li>
-                        <input type="radio" name="seguro"> Sí
-                        <input type="radio" name="seguro"> No<br><br>
+                </ol>
 
-                        <li>Seguro</li>
+                <hr>
+
+                <!-- SEGURO MÉDICO -->
+                <h2>Seguro Médico</h2>
+                <ol start="23">
+
+                    <li>
+                        ¿Posee seguro médico?<br>
+                        <label><input type="radio" name="seguro"> Sí</label>
+                        <label><input type="radio" name="seguro"> No</label>
+                    </li>
+
+                    <li>
+                        Seguro:<br>
                         <select name="aseguradoras">
                             <option value="">Opciones</option>
                             <option value="universal">ARS Universal</option>
@@ -156,61 +203,86 @@
                             <option value="senasa">Senasa</option>
                             <option value="futuro">ARS Futuro</option>
                             <option value="otro">Otro</option>
-                        </select><br><br>
+                        </select>
+                    </li>
 
-                        <li>Número de póliza:</li>
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:250px;"><br><br>
-                        <li>Titular del seguro:</li>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:250px;">
-                    </p>
-                    <hr>
-                    <h2>Servicio Requerido</h2>
+                    <li>
+                        Número de póliza:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:250px;">
+                    </li>
 
+                    <li>
+                        Titular del seguro:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:250px;">
+                    </li>
 
-                    <p>Seleccione el servicio solicitado: <br>
+                </ol>
 
-                        <input type="radio" name="serv">Consulta pediátrica general <br>
-                        <input type="radio" name="serv">Control de crecimiento y desarrollo <br>
-                        <input type="radio" name="serv">Vacunación <br>
-                        <input type="radio" name="serv">Atención en emergencia <br>
-                        <input type="radio" name="serv">Evaluación nutricional <br>
-                        <input type="radio" name="serv">Certificado médico escolar <br>
-                        <input type="radio" name="serv">Otro: <br>
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:250px;">
-                    </p>
+                <hr>
 
-                    <hr>
+                <!-- SERVICIO REQUERIDO -->
+                <h2>Servicio Requerido</h2>
+                <ol start="27">
 
-                    <h2>Autorización</h2>
+                    <li>
+                        Seleccione el servicio solicitado:<br>
+                        <label><input type="radio" name="serv"> Consulta pediátrica general</label><br>
+                        <label><input type="radio" name="serv"> Control de crecimiento y desarrollo</label><br>
+                        <label><input type="radio" name="serv"> Vacunación</label><br>
+                        <label><input type="radio" name="serv"> Atención en emergencia</label><br>
+                        <label><input type="radio" name="serv"> Evaluación nutricional</label><br>
+                        <label><input type="radio" name="serv"> Certificado médico escolar</label><br>
+                        <label><input type="radio" name="serv"> Otro:</label><br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:250px;">
+                    </li>
 
-                    <p>
-                        <li>Autorizo a la clínica a administrar tratamientos básicos (analgésicos, suero oral,
-                            antihistamínicos).</li><br>
-                        <input type="radio" name="autorizo"> Sí
-                        <input type="radio" name="autorizo"> No<br><br>
+                </ol>
 
-                        <li>Prefiero ser contactado por:</li><br>
-                        <input type="radio" name="contacto" value="whatsapp"> WhatsApp
-                        <input type="radio" name="contacto" value="llamada"> Llamada
-                        <input type="radio" name="contacto" value="email"> Correo electrónico
-                    </p>
-                    <hr>
-                    <h2>Declaración y Firma</h2>
-                    <p>
-                        Declaro que la información suministrada es verídica y completa.<br><br>
+                <hr>
 
-                        Firma del representante:
-                        <input type="text"
-                            style="border:none;border-bottom:1px solid #000;outline:none;width:250px;"><br><br>
-                        Fecha:
-                        <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:120px;">
-                    </p>
+                <!-- AUTORIZACIÓN -->
+                <h2>Autorización</h2>
+                <ol start="28">
+
+                    <li>
+                        Autorizo a la clínica a administrar tratamientos básicos (analgésicos, suero oral, antihistamínicos).<br>
+                        <label><input type="radio" name="autorizo"> Sí</label>
+                        <label><input type="radio" name="autorizo"> No</label>
+                    </li>
+
+                    <li>
+                        Prefiero ser contactado por:<br>
+                        <label><input type="radio" name="contacto" value="whatsapp"> WhatsApp</label>
+                        <label><input type="radio" name="contacto" value="llamada"> Llamada</label>
+                        <label><input type="radio" name="contacto" value="email"> Correo electrónico</label>
+                    </li>
+
+                </ol>
+
+                <hr>
+
+                <!-- DECLARACIÓN Y FIRMA -->
+                <h2>Declaración y Firma</h2>
+                <ol start="30">
+
+                    <li>
+                        Declaro que la información suministrada es verídica y completa.
+                    </li>
+
+                    <li>
+                        Firma del representante:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:250px;">
+                    </li>
+
+                    <li>
+                        Fecha:<br>
+                        <input type="text" style="border:none;border-bottom:1px solid #000;width:120px;">
+                    </li>
+
                 </ol>
             </fieldset>
         </form>
     </main>
 
 </body>
-
 </html>
