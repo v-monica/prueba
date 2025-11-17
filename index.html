@@ -7,14 +7,15 @@
 </head>
 
 <body>
-    <header><img src="logo.png" alt="logo" width="70" height="70">
+    <header>
+        <img src="logo.png" alt="logo" width="70" height="70">
         <h1>Formulario Pediátrico</h1>
     </header>
 
     <main>
+      <form action="" method="get">
         <fieldset>
             <h2>Datos del Representante</h2>
-
             <p>
                 1. Apellidos del representante:
                 <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
@@ -42,9 +43,7 @@
             </p>
 
             <hr>
-
-            <h2>Datos del Paciente (Niño o Niña)</h2>
-
+             <h2>Datos del Paciente (Niño o Niña)</h2>
             <p>
                 7. Nombre completo del niño(a):
                 <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:350px;"><br><br>
@@ -188,11 +187,8 @@
                 <input type="radio" name="contacto" value="llamada"> Llamada
                 <input type="radio" name="contacto" value="email"> Correo electrónico
             </p>
-
             <hr>
-
             <h2>Declaración y Firma</h2>
-
             <p>
                 Declaro que la información suministrada es verídica y completa.<br><br>
 
@@ -203,7 +199,9 @@
                 <input type="text" style="border:none;border-bottom:1px solid #000;outline:none;width:120px;">
             </p>
         </fieldset>
+      </form>
     </main>
 
 </body>
 </html>
+
